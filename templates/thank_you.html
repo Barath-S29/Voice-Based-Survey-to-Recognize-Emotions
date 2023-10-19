@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .thank-you-message {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .predicted-emotion {
+            font-size: 24px;
+            font-weight: bold;
+            color: #17A2B8;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .emoji.happy {
+            color: #FFC107;
+        }
+
+        .emoji.sad {
+            color: #007BFF;
+        }
+
+        .emoji.angry {
+            color: #DC3545;
+        }
+
+        .emoji.fear {
+            color: #FF4500;
+        }
+
+        .emoji.neutral {
+            color: #6C757D;
+        }
+
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .link {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-message">
+        <h1>Thank You for Completing the Survey!</h1>
+        <p>We appreciate your participation.</p>
+
+        <div class="predicted-emotion">
+            {% if predicted_emotion == "Happiness" %}
+                <span class="emoji happy">&#x1F604;</span>
+            {% elif predicted_emotion == "Sad" %}
+                <span class="emoji sad">&#x1F614;</span>
+            {% elif predicted_emotion == "Angry" %}
+                <span class="emoji angry">&#x1F621;</span>
+            {% elif predicted_emotion == "Fear" %}
+                <span class="emoji fear">&#x1F628;</span>
+            {% elif predicted_emotion == "Neutral" %}
+                <span class="emoji neutral">&#x1F610;</span>
+            {% endif %}
+
+            <p>Your predicted emotion: <strong>{{ predicted_emotion }}</strong></p>
+
+            {% if predicted_emotion in ["Sad", "Depressed", "Fear", "Neutral","Angry"] %}
+                <div class="link-container">
+                    <p>Here are some resources that may help:</p>
+                    <a class="link" href="#">Link to resources</a>
+                </div>
+            {% endif %}
+        </div>
+
+        <p>Feel free to take the survey again or explore other parts of our website.</p>
+    </div>
+</body>
+</html>
