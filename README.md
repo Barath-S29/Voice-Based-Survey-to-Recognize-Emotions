@@ -21,7 +21,7 @@ Follow these:
 
 . Move that audio file to any one of the folder named [Anger, Sad, Happiness, Neutral, Fear]
 
-. Finally, delete the archive folder before exectuing the program.
+. Finally, delete the archive folder before executing the program.
 
 
 RUN :
