@@ -1,37 +1,33 @@
-*****************************************************************
-*****************************************************************
-*************   FOLLOW THESE INSTRUCTIONS   *********************
-*****************************************************************
-*****************************************************************
+# FOLLOW THESE INSTRUCTIONS   
 
 
-MODULES TO BE INSTALLED : 
+## MODULES TO BE INSTALLED : 
 
-. pyaudio
-. parselmouth
-. flask
-. sklearn
-. wave
-. uuid
-. numpy
+- pyaudio
+- parselmouth
+- flask
+- sklearn
+- wave
+- uuid
+- numpy
 
-Follow these: 
+## Follow these: 
 
-. From the archive folder, which contains 24 different actors voice, filter out each voice based on the emotions.
+- From the archive folder, which contains 24 different actors voice, filter out each voice based on the emotions.
 
-. Move that audio file to any one of the folder named [Anger, Sad, Happiness, Neutral, Fear]
+- Move that audio file to any one of the folder named [Anger, Sad, Happiness, Neutral, Fear]
 
-. Finally, delete the archive folder before executing the program.
+- Finally, delete the archive folder before executing the program.
 
 
-RUN :
+## RUN :
 
-. First install the modules and libraries mentioned above.
+- First install the modules and libraries mentioned above.
 
-. Mention the dataset folder's directory in the file named "Emotion.py".
+- Mention the dataset folder's directory in the file named "Emotion.py".
 
-. Run the file Emotion.py .(needs localhost)
+- Run the file Emotion.py .(needs localhost)
 
-. After running the file in your desired IDE, the localhost link will be generated.
+- After running the file in your desired IDE, the localhost link will be generated.
 
-. Access the website through the link. 
+- Access the website through the link. 
